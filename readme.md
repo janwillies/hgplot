@@ -1,12 +1,13 @@
-# readme
-Reads temperature from mqtt and plots on [plot.ly](https://plot.ly). Best used together with homematic HM-CC-RT-DN and [homegear](https://www.homegear.eu/index.php/Main_Page)
+# hgplot
+Reads information from mqtt and plots on [plot.ly](https://plot.ly). Best used  with homematic [HM-CC-RT-DN](http://www.fhemwiki.de/wiki/HM-CC-RT-DN_Funk-Heizk%C3%B6rperthermostat) and [homegear](https://www.homegear.eu/index.php/Main_Page)
 
-## api access
-### tokens
-get tokens at
-  - [https://plot.ly/settings/api](https://plot.ly/settings/api)
-
+## prerequisites
+### homegear
+enable mqtt in `/etc/homegear/mqtt.conf`
+### plotly
+get api-key and tokens at [https://plot.ly/settings/api](https://plot.ly/settings/api)
 and edit  `config.yml`
+
 ## docker quickstart
 ```
 $ cp config-dist.yml config.yml
@@ -30,3 +31,6 @@ https://plot.ly/~joe/1
 ```
 
 and visit the [plot.ly dashboard](https://plot.ly/organize/home)
+
+## links
+- https://github.com/shirk/node-red-contrib-homegear-mqtt
