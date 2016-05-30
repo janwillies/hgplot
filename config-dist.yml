@@ -1,0 +1,29 @@
+---
+# https://plot.ly/settings/api
+# one stream token per device to be plotted
+plotly:
+  user: joe
+  apikey: 1234-5678
+  maxpoints: 1880
+  stream_ids:
+    - aaaaaaaaaa
+    - bbbbbbbbbb
+    - cccccccccc
+    - dddddddddd
+
+# id is taken from homegear -r; fs 0; ls
+# stream is taken from above stream_ids
+homegear:
+  timezone: Europe/Berlin  
+  devices:
+    - name: LivingRoom
+      id: 1
+      stream: aaaaaaaaaa
+    - name: Kitchen
+      id: 2
+      stream: bbbbbbbbbb
+
+mqtt:
+  host: test.mosquitto.org
+  port: 1883
+  topic: homegear/1234-5678-9abc/event/+/4/ACTUAL_TEMPERATURE
