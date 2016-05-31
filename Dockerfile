@@ -7,6 +7,6 @@ RUN pip install pyyaml \
     paho-mqtt \
     pytz
 
-ADD temperature.py /temperature.py
+ADD hgplot.py /hgplot.py
 
-ENTRYPOINT python /temperature.py
+ENTRYPOINT python /hgplot.py
