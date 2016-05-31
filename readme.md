@@ -24,9 +24,10 @@ use `pyvenv rvenv` to setup virtualenv and `source rvenv/bin/activate` to activa
 ```
 (rvenv) ➜  hgplot git:(master) ✗ python temperature.py
 https://plot.ly/~joe/1
-2016-03-06 23:03:56: 21.42
-2016-03-06 23:04:58: 21.42
-2016-03-06 23:05:58: 21.52
+Connected to broker mqtt.broker.lan
+2016-05-31 21:29:42.130964+02:00: 1, 23.7
+2016-05-31 21:29:42.131873+02:00: 2, 23.9
+2016-05-31 21:29:42.132849+02:00: 3, 23.4
 [...]
 ```
 

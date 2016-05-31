@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 """reads temperature from homegear mqtt broker and plots on plot.ly."""
 
-import datetime
 import pytz
 import json
 import yaml
+
+from datetime import datetime
 
 import paho.mqtt.client as mqtt
 
