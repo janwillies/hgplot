@@ -1,6 +1,7 @@
 # hgplot
 Reads information from mqtt and plots on [plot.ly](https://plot.ly). Best used  with homematic [HM-CC-RT-DN](http://www.fhemwiki.de/wiki/HM-CC-RT-DN_Funk-Heizk%C3%B6rperthermostat) and [homegear](https://www.homegear.eu/index.php/Main_Page)
 
+![Screenshot](screenshot.png)
 ## prerequisites
 ### homegear
 enable mqtt in `/etc/homegear/mqtt.conf`
